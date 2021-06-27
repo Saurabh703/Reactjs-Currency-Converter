@@ -7,8 +7,8 @@ const BASE_URL = `http://api.exchangeratesapi.io/latest?access_key=${ACCESS_KEY}
 
 const App = () => {
   const [ currencyOptions, setCurrencyOptions ] = useState([]);
-  const [ fromCurrency, setFromCurrency] = useState()
-  const [toCurrency, setToCurrency] = useState()
+  const [ fromCurrency, setFromCurrency] = useState(null)
+  const [toCurrency, setToCurrency] = useState(null)
   const [exchangeRate, setExchangeRate] = useState()
   const [amount, setAmount] = useState(1)
   const [amountInFromCurrency, setAmountInFromCurrency] = useState(true)
